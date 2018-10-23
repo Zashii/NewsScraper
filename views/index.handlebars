@@ -1,0 +1,25 @@
+    <div id="wrapper">
+      <h1>Note Scraper</h1>
+      <h2><i>Destructoid News Articles</i></h2>
+      <div id="articles">
+        
+        
+        {{#each notenote }}
+        <a href="{{link}}"><img style='float:left; border: 2px solid black; margin: 5px' src="{{image}}"/></a>
+        <a href="{{link}}"><h4>{{title}} </h4></a>
+        <p>{{summary}}</p>
+        <p><a href={{link}}>{{link}}</a></p>
+        
+
+        {{/each}}
+
+
+
+      </div>
+      <div id="notes">
+        
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="app.js"></script>
